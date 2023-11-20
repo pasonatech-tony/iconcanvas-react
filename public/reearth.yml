@@ -1,0 +1,41 @@
+name: Icon Canvas
+version: 1.0.0
+id: icon-canvas
+extensions:
+  - id: sidebar
+    type: widget
+    name: Icon Canvas
+    singleOnly: true
+    schema:
+      groups:
+        - id: customize
+          title: Icon Canvas
+          fields:
+            - id: title
+              type: string
+              title: Title
+            - id: canvasurl
+              type: url
+              title: Canvas URL
+            - id: csvurl
+              type: url
+              title: CSV File
+            - id: width
+              type: number
+              title: Width
+              description: Displays the width of icon by the set value.
+              defaultValue: 100
+            - id: height
+              type: number
+              title: Height
+              description: Displays the height of icon by the set value.
+              defaultValue: 100
+            - id: themecolor
+              type: string
+              title: Theme color
+              ui: color
+    widgetLayout:
+      defaultLocation:
+        zone: outer
+        section: left
+        area: middle

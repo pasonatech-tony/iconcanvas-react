@@ -1,0 +1,14 @@
+<title></title>
+<body>
+  <div id="root"></div>
+</body>
+<script type="module" src="./main.tsx"></script>
+<script>
+  window.addEventListener("message", function (e) {
+    if (e.source !== parent) return;
+    if (e.data.act === 'initProperties'){
+      window.pluginInitProperties = e.data.payload;
+    }
+  });
+</script>
+
